@@ -7,6 +7,8 @@ import './styles/pokedexById.css'
 
 const PokedexById = () => {
 
+  const navigate = useNavigate()
+
   const { id } = useParams()
 
   const [pokemon, setPokemon] = useState()
@@ -16,10 +18,15 @@ const PokedexById = () => {
   useEffect(() => {
     const URL = `https://pokeapi.co/api/v2/pokemon/${id}/`
     axios.get(URL)
-      .then(res => setPokemon(res.data))
+      .then(res => {
+        setPokemon(res.data)
+        setHasError(false)
+      })
       .catch(err => {
-        console.log(err)
+        navigate(`/pokedex/`)
         setHasError(true)
+        console.log(err)
+
       })
   }, [])
 
@@ -27,11 +34,9 @@ const PokedexById = () => {
     return <Pokemon404 />
   } else {
 
-    const navigate = useNavigate()
     const handleReturn = () => {
       navigate(`/pokedex/`)
     }
-
     return (
       <article className='pokemon'>
         <header className='pokedex__header'>

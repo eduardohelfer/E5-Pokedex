@@ -8,7 +8,9 @@ const InputSearch = () => {
 
   const submit = e => {
     e.preventDefault()
+
     navigate(`/pokedex/${e.target.search.value.trim().toLowerCase()}`)
+
   }
 
   return (
