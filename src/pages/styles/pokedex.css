@@ -1,0 +1,45 @@
+.pokedex__header {
+  align-content: center;
+}
+
+.pokedex__welcome {
+  display: flex;
+  justify-content: center;
+  margin: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.pokedex__name {
+  font-weight: 800;
+}
+
+.search-select__aside {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1340px;
+  justify-content: space-evenly;
+  gap: 8px;
+}
+
+.pagination__aside {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1340px;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1340px;
+  justify-content: center;
+}

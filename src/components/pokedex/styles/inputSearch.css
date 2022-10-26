@@ -1,0 +1,32 @@
+.search__form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search__input {
+  padding: 10px 20px;
+  box-shadow: -1px 2px 10px #0004;
+  font-size: 1.2rem;
+  min-height: 40px;
+  width: 14rem;
+  z-index: 3;
+}
+
+.search__btn {
+  color: var(--color-white);
+  background-color: var(--color-red);
+  padding: 10px 5px;
+  box-shadow: -1px 2px 10px #0004;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  min-height: 40px;
+  width: 6rem;
+  z-index: 3;
+}
+
+.search__btn:hover {
+  filter: brightness(1.1);
+}
